@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 import navBarImg from "./navbarImage.png";
 
 const Navbar = () => {
   const [showNavMobile, setShowNavMobile] = useState(false);
-  const [width, setWidth] = useState(0);
+  const navigate = useNavigate();
   const handleNav = (e) => {
     setShowNavMobile(!showNavMobile);
     console.log(e.view.innerWidth);
@@ -23,7 +24,14 @@ const Navbar = () => {
   return (
     <div>
       <div className="md:hidden flex justify-between items-center my-6">
-        <img className="w-[100px]" src={navBarImg} />
+        <img
+          className="w-[100px] cursor-pointer ls:cursor-pointer"
+          src={navBarImg}
+          alt="home"
+          onClick={() => {
+            navigate("/");
+          }}
+        />
         <div onClick={handleNav} className="z-10 cursor-pointer">
           {!showNavMobile ? (
             <AiOutlineMenu size={20} />

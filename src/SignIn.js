@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [phone, setPhone] = useState("");
-  const locate = useNavigate();
+  const navigate = useNavigate();
   const {
     register,
     control,
@@ -26,7 +26,7 @@ const SignIn = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    locate("signin-otp");
+    navigate("signin-otp");
   };
   return (
     <CommomLayout>

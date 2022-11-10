@@ -28,7 +28,7 @@ const SignInOtp = () => {
             numInputs={4}
             className="md:m-auto"
             inputStyle={
-              "md:text-[22px] text-[16px] border-color:rgb(231,231,231) text-black border-[1px] m-[5px] px-9 py-[3px] rounded"
+              "md:text-[22px] text-[16px] border-color:rgb(231,231,231) text-black border-[1px] m-[5px] px-9 py-[3px] rounded lg:w-[100%]"
             }
           />
           {/* <button className="border-[1px] rounded-lg text-black-light border-color:primary_grey px-0 py-[10px] my-4 font-normal w-[100%] md:w-auto md:px-20">
