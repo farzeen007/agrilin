@@ -5,11 +5,12 @@
 
 @layer base {
   body {
-    margin: 5px 75px;
+    position: relative;
+    margin: 5px 50px 0px 50px;
     font-size: 14px;
     font-family: "Lexend", sans-serif;
   }
-  @media only screen and (max-width: 640px) {
+  @media screen and (min-width: 758px) and (max-width: 836px) {
     body {
       margin: 5px 40px;
     }
