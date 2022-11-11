@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
 import navBarImg from "../navbarImage.png";
+import Image from 'next/image'
 
+type Image = {
+  src: string;
+};
 
 const Navbar = () => {
   const [showNavMobile, setShowNavMobile] = useState(false);
@@ -25,7 +29,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="md:hidden flex justify-between items-center my-6">
-        <img
+        <Image
           className="w-[100px] cursor-pointer ls:cursor-pointer"
           src={navBarImg}
           alt="home"
@@ -49,7 +53,7 @@ const Navbar = () => {
         }
       >
         {!showNavMobile ? (
-          <img className="w-[100px] align-middle" src={navBarImg} />
+          <Image alt="login" className="w-[100px] align-middle" src={navBarImg} />
         ) : (
           <div className="mt-8 ml-[20px] text-[15px] font-medium text-black-dark">
             M E N U
@@ -76,33 +80,7 @@ const Navbar = () => {
           </button>
         </ul>
       </div>
-      {/* <div
-        className={
-          showNavMobile
-            ? " fixed left-0 top-10 w-[100%] text-left top-0 h-full  mx-4 bg-white	"
-            : "hidden"
-        }
-      >
-        <img className="w-[100px] mt-5 ml-4" src={navBarImg} />
-        
-        <ul>
-          <li className="p-4">
-            <a href="#">How It Works</a>
-          </li>
-          <li className="p-4">
-            <a href="#">Why Agrilin?</a>
-          </li>
-          <li className="p-4">
-            <a href="#">Contact</a>
-          </li>
-          <button className="px-4 py-0 m-3 rounded border-2 border-black w-[100%] absolute bottom-14">
-            <a href="#">SIGN IN</a>
-          </button>
-          <button className="px-4 py-0 m-3 rounded bg-lime-400 w-[100%] absolute bottom-4">
-            <a href="#">REGISTER</a>
-          </button>
-        </ul>
-      </div> */}
+
       <div className="border-grey-mobile_dark md:border-grey-mobile_dark border-[0.5px]  h-0 my-4"></div>
     </div>
   );

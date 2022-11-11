@@ -3,9 +3,6 @@ import CommomLayout from "../Layout/CommomLayout";
 import LoginImage from "../Components/LoginImage";
 import SignInImage from "../SignInImage.png";
 import OtpInput from "react-otp-input";
-type Props = {
-  otp: number;
-};
 
 const SignInOtp = () => {
   const [otp, setOtp] = useState();

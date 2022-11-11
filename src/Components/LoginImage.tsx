@@ -1,15 +1,16 @@
 import React from "react";
+import Image from 'next/image'
 
 type Props = {
-  imgSrc: string,
+  imgSrc: any,
 }
 
 const LoginImage = ({ imgSrc }:Props) => {
   return (
     <div className="hidden md:block w-[620px] lg:w-[520px] mt-[18px]">
-      <img
+      <Image
         alt="login"
-        className="hidden inline-block w-[100%] md:flex"
+        className=" inline-block w-[100%] md:flex"
         src={imgSrc}
       />
     </div>

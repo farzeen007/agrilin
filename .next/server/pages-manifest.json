@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/signinotp": "pages/signinotp.js"
+  "/signinotp": "pages/signinotp.js",
+  "/": "pages/index.js"
 }

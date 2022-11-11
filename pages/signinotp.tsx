@@ -60,7 +60,7 @@ const SignInOtp = () => {
             <span className="text-green-light">Call us on +91 9037766112</span>
           </div>
         </div>
-        <LoginImage imgSrc={SignInImage} />
+        {/* <LoginImage imgSrc={SignInImage} /> */}
       </div>
     </CommomLayout>
   );

@@ -13,7 +13,7 @@ import { useRouter } from "next/router";
 //   phone: yup.string().required(),
 // });
 // .required();
-
+// const SignInImage = require("../SignInImage.png");
 const SignIn = () => {
   const [phone, setPhone] = useState("");
   const navigate = useRouter();
